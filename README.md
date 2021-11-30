@@ -10,7 +10,7 @@
  - Exponential-time complexity를 가지는 문제로, 이 문제를 풀기 위해 사용하는 알고리즘들도 np-hard이거나 exponential-time complexity를 가지는 경우가 많습니다.
  - 최근에는 deep-learning을 사용하여 해결하려는 시도를 할 정도로 간단하면서도 어려운 문제라고 생각합니다.
 
-3. Design decision explaining why you select:
+3. Design decision explaining why you select.
   3.1. Parameters such as the size of an initial population.
     - 강의에서 진행한 문제들에서는 평균적으로 1천개 정도를 사용하여 적절한 해답들을 찾았기 때문에, 1천개의 population을 사용하여 시작을 할 예정입니다.
     - 하지만 진행하면서 문제의 성향에 따라 증감이 이루어 질 예정입니다.

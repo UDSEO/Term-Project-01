@@ -13,32 +13,39 @@
 3. Design decision explaining why you select.
 
   3.1. Parameters such as the size of an initial population.
+  
     - 강의에서 진행한 문제들에서는 평균적으로 1천개 정도를 사용하여 적절한 해답들을 찾았기 때문에, 1천개의 population을 사용하여 시작을 할 예정입니다.
     - 하지만 진행하면서 문제의 성향에 따라 증감이 이루어 질 예정입니다.
   
   3.3. Fitness function.
+  
     - Closest point distance의 평균 값을 계산하는 함수를 fitness function으로 사용할 계획입니다.
     - Closest point distance는 한 object(mesh or point cloud)에 속한 point와 거리가 가장 가까운 상대 object의 point 사이의 거리를 의미합니다.
     
   3.2. Stopping criteria.
+  
     - Fitness function의 값이 특정 값 이하일 경우, 알고리즘을 종료합니다.
     - 3D스캐너를 사용할 때 허용오차범위가 0.5mm 정도입니다. 이 값을 그대로 사용하거나 1.0mm 정도를 사용할 예정입니다.
 
   3.4. Selection operator.
+  
     - 간단하게 ramdom selection을 사용할 예정입니다.
     - 강의에서 진행한 문제들과 숙제들을 봤을 때, 굳이 복잡한 방법 필요 없이 random selection을 사용해도 성능이 괜찮았던 것 같
     - Generation이 계속 진행되어도 수렴이 잘 되지 않으면, 다른 방법을 검토하겠습니다.
 
   3.5. Crossover operator.
+  
     - 두 population의 Transaltion vector 교환 또는 rotation vector 교환으로 crossover operation을 수행할 예정입니다.
     - Tx, Ty, Tz, Rx, Ry, Rz 각각을 독립적으로 사용하여 crossover할 경우, 나름 피팅이 된 population의 결과를 안 좋은 방향으로 이끌 확률이 클 것으로 예상됩니다.
     - 각각을 독립적으로 사용하는 경우는 mutation을 통해서 적용할 예정입니다.
 
   3.6. Mutation operator.
+  
     - Fitness function의 값에 비례하여 Tx, Ty, Tz, Rx, Ry, Rz의 변동 폭을 조정하여 Mutation을 수행할 예정입니다.
     - 적당한 비례식을 찾기 위해 초기에는 다양한 시도를 하면서 데이터를 모을 예정입니다.
 
   3.7. Generational selection strategy.
+  
     - Ramdom selection을 사용할 예정입니다.
 
 4. How to run your project.

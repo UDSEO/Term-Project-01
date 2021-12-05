@@ -43,17 +43,15 @@
   
     - Crossover operator is a exchange the rotation vector or translation vector between two populations.
     - I'm considering a exchange the each value(Tx, Ty, Tz, Rx, Ry, Rz) between two populations. 
-    - Tx, Ty, Tz, Rx, Ry, Rz 각각을 독립적으로 사용하여 crossover할 경우, 나름 피팅이 된 population의 결과를 안 좋은 방향으로 이끌 확률이 클 것으로 예상됩니다.
 
   3.6. Mutation operator.
-  
-    
-    - Fitness function의 값에 비례하여 Tx, Ty, Tz, Rx, Ry, Rz의 변동 폭을 조정하여 Mutation을 수행할 예정입니다.
-    - 적당한 비례식을 찾기 위해 초기에는 다양한 시도를 하면서 데이터를 모을 예정입니다.
+
+    - I will control the range of random value as per the fitness function.
+    - I will collect some data for finding a characteristic of problem and some good equation to solve problem.
 
   3.7. Generational selection strategy.
   
-   - I will use 'elitism'.
+   - I will use 'elitism'. (random selection -> elitism)
     
     
 4. How to run your project.

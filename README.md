@@ -2,23 +2,31 @@
 
 2. What is the topic?
  - ICP (Iterative Closest Point) algorithm
- - 3D 모델에 3D스캔한 point cloud를 피팅하는 알고리즘으로 '3D모델 <-> 3D모델', 'point cloud <-> point cloud' 에서도 사용합니다,
+ - ICP is the Fitting a point cloud to a 3D model, a point cloud to a point cloud or a 3D model to a 3D model.
 
 1. Justification of why you have chosen your topic.
- - 개발중인 소프트웨어에서 사용하고 있는 알고리즘 중 하나로, evolutionary computation으로 접근해보기 좋은 주제라고 생각해서 선택하였습니다.
- - 한 point cloud를 다른 한 쪽에 피팅하기 위해 translation vector (Tx, Ty, Tz)와 rotation vector (Rx, Ry, Rz)를 찾아야 합니다.
- - Exponential-time complexity를 가지는 문제로, 이 문제를 풀기 위해 사용하는 알고리즘들도 np-hard이거나 exponential-time complexity를 가지는 경우가 많습니다.
- - 최근에는 deep-learning을 사용하여 해결하려는 시도를 할 정도로 간단하면서도 어려운 문제라고 생각합니다.
+ 
+ - ICP is the one of the algorithm in our developing software, and a good topic that applies 'Evolutionary computaton".
+ 
+ - For fitting a point cloud to another(3D model or point cloud), I have to find two vector, translation vector (Tx, Ty, Tz) and rotation vector (Rx, Ry, Rz).
+ 
+ - ICP is a exponential-time complexity problem. Some algorithm to solve ICP are also np-hard problem or exponential-time complexity problem.
+ 
+ - Recently, There are some research to use a deep-learning for solving ICP.
+
+ - I think ICP is good topic. Because a concept of ICP is simple, but solving the problem is difficult.
 
 3. Design decision explaining why you select.
 
   3.1. Parameters such as the size of an initial population.
-  
-    - 강의에서 진행한 문제들에서는 평균적으로 1천개 정도를 사용하여 적절한 해답들을 찾았기 때문에, 1천개의 population을 사용하여 시작을 할 예정입니다.
-    - 하지만 진행하면서 문제의 성향에 따라 증감이 이루어 질 예정입니다.
+
+    - I will use 1,000 population. 
+    - While solving this problem, I will change the size of population.
   
   3.3. Fitness function.
   
+    - Fitness function is the function to compute average valoue of closest point distance.
+    - Closest point distance is a shortest distance between two points, each points belong to different object(3D mesh or point cloud).
     - Closest point distance의 평균 값을 계산하는 함수를 fitness function으로 사용할 계획입니다.
     - Closest point distance는 한 object(mesh or point cloud)에 속한 point와 거리가 가장 가까운 상대 object의 point 사이의 거리를 의미합니다.
     

@@ -1,4 +1,7 @@
-[TermProject.zip](https://github.com/UDSEO/Term-Project-01/files/7668881/TermProject.zip)
+대용량 첨부파일 1개(425MB)	대용량 첨부 파일은 30일간 보관 / 100회까지 다운로드 가능
+PC저장	네이버 MYBOX	
+https://bigfile.mail.naver.com/download?fid=0lK/b4kXWXglKCYwHru/ax2waAtjKogZKxuZKx2maxurKqEjKxMdKotqKxEla3YZKqiCK6UXMq04KqKmaAEwKrKdFAbqpoUXaAb/pAU9Ft==
+다운로드 기간: 2021/12/18 ~ 2022/01/17
 
 # Term-Project-01
 
